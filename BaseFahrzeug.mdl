@@ -1,0 +1,784 @@
+Model {
+  Name			  "BaseFahrzeug"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "none"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Sat Jul 03 20:01:46 2004"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Sun Jul 11 23:05:20 2004"
+  ModelVersionFormat	  "1.%<AutoIncrement:27>"
+  ConfigurationManager	  "None"
+  SimParamPage		  "Solver"
+  StartTime		  "0.0"
+  StopTime		  "1180"
+  SolverMode		  "Auto"
+  Solver		  "ode45"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "auto"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  on
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "BaseFahrzeug"
+    Location		    [4, 91, 1016, 653]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      Gain
+      Name		      "14V, 60 Ah"
+      Position		      [650, 399, 780, 451]
+      Gain		      "100/(14*60*3600)"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Saturate
+      Name		      ">=0"
+      Position		      [775, 140, 805, 170]
+      UpperLimit	      "inf"
+      LowerLimit	      "0"
+      LinearizeAsGain	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Alternator Torque"
+      Ports		      [2, 1]
+      Position		      [420, 257, 475, 308]
+      AncestorBlock	      "simulink3/Functions\n& Tables/Look-Up\nTable (2"
+"-D)"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "Lookup Table (2-D)"
+      MaskDescription	      "Performs 2-D linear interpolation of input valu"
+"es using the specified input/output table.  Extrapolation is performed outsid"
+"e the table boundaries.  The first dimension corresponds to the top (or left)"
+" input port."
+      MaskPromptString	      "Row:|Column:|Table:"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskVariables	      "x=@1;y=@2;t=@3;"
+      MaskInitialization      "[r,c]=size(t);\nxt=reshape(x,prod(size(x)),1);"
+"\nxi=xt(:,ones(1,c));\nminx=min(x); maxx=max(x);\nmint=min(min(t)); maxt=max("
+"max(t));\n"
+      MaskDisplay	      "plot(double(xi),double(t),double([minx maxx]),d"
+"ouble([mint mint]),double([minx minx]),double([mint maxt]))"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "gen_effmap_speeds*30/pi|gen_effmap_Pels|gen_eff"
+"map_table"
+      MaskVariableAliases     ",,"
+      System {
+	Name			"Alternator Torque"
+	Location		[94, 169, 350, 309]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Rows"
+	  Position		  [25, 33, 55, 47]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "Cols"
+	  Position		  [25, 63, 55, 77]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Lookup2D
+	  Name			  "Look-Up\nTable (2-D)"
+	  Position		  [90, 26, 155, 84]
+	  ShowName		  off
+	  RowIndex		  "x"
+	  ColumnIndex		  "y"
+	  OutputValues		  "t"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Out1"
+	  Position		  [190, 48, 220, 62]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Rows"
+	  SrcPort		  1
+	  DstBlock		  "Look-Up\nTable (2-D)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Cols"
+	  SrcPort		  1
+	  DstBlock		  "Look-Up\nTable (2-D)"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Look-Up\nTable (2-D)"
+	  SrcPort		  1
+	  DstBlock		  "Out1"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Charging Efficiency"
+      Position		      [465, 365, 555, 395]
+      Gain		      "0.99"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock"
+      Position		      [175, 55, 195, 75]
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Clock
+      Name		      "Clock1"
+      Position		      [470, 155, 490, 175]
+      DisplayTime	      off
+      Decimation	      "10"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "Discharging Efficiency"
+      Position		      [465, 455, 555, 485]
+      Gain		      "1/0.99"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Lookup
+      Name		      "Engine Speed\n(RPM)"
+      Position		      [270, 53, 310, 77]
+      InputValues	      "Zeit"
+      OutputValues	      "Revs"
+    }
+    Block {
+      BlockType		      Lookup
+      Name		      "Engine Torque\n(Nm)"
+      Position		      [545, 153, 585, 177]
+      InputValues	      "TimeVektor"
+      OutputValues	      "Mp"
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator"
+      Ports		      [1, 1]
+      Position		      [845, 140, 875, 170]
+      BackgroundColor	      "magenta"
+      ShowName		      off
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+      Port {
+	PortNumber		1
+	Name			"g Fuel"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+    }
+    Block {
+      BlockType		      Integrator
+      Name		      "Integrator1"
+      Ports		      [1, 1]
+      Position		      [815, 409, 845, 441]
+      BackgroundColor	      "magenta"
+      ShowName		      off
+      ExternalReset	      "none"
+      InitialConditionSource  "internal"
+      InitialCondition	      "0"
+      LimitOutput	      off
+      UpperSaturationLimit    "inf"
+      LowerSaturationLimit    "-inf"
+      ShowSaturationPort      off
+      ShowStatePort	      off
+      AbsoluteTolerance	      "auto"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Load Power (W)"
+      Position		      [135, 496, 195, 524]
+      Value		      "Pload"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum"
+      Ports		      [2, 1]
+      Position		      [630, 155, 650, 175]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [400, 415, 420, 435]
+      ShowName		      off
+      IconShape		      "round"
+      Inputs		      "|+-"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Switch
+      Name		      "Thresh=0"
+      Position		      [590, 358, 620, 492]
+      Threshold		      "0"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Time Vector Calculation"
+      Ports		      []
+      Position		      [70, 235, 185, 279]
+      OpenFcn		      "TimeVektor=[0:N-1];"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Time Vector Calculation"
+	Location		[433, 403, 931, 703]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+      }
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      Position		      [905, 410, 965, 440]
+      ShowName		      off
+      VariableName	      "Charge"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Position		      [925, 140, 985, 170]
+      ShowName		      off
+      VariableName	      "Verbrauch"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      Position		      [390, 20, 450, 50]
+      ShowName		      off
+      VariableName	      "BaseZeit"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Verbrauch"
+      Ports		      [1]
+      Position		      [925, 86, 1000, 114]
+      BackgroundColor	      "lightBlue"
+      Format		      "short"
+      Decimation	      "1"
+      Floating		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "engine_gen_ratio"
+      Position		      [288, 115, 392, 165]
+      Orientation	      "down"
+      NamePlacement	      "alternate"
+      Gain		      "eng_gen_ratio"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "engine_gen_ratio1"
+      Position		      [500, 268, 635, 302]
+      ShowName		      off
+      Gain		      "eng_gen_ratio"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "fuel\n(g/s)"
+      Ports		      [2, 1]
+      Position		      [690, 127, 740, 178]
+      ShowPortLabels	      off
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      MaskType		      "2-D Table Lookup"
+      MaskDescription	      "Two Dimensional Table Lookup\nThe first input c"
+"orresponds to X Index and the second input corresponds to the Y Index"
+      MaskHelp		      "This block returns a linearly interpolated inte"
+"rsection from the table using the X index (which corresponds to the rows of t"
+"he table) and the Y index (which corresponds to the columns of the table).  E"
+"xtrapolation is used."
+      MaskPromptString	      "X Index|Y Index|Table"
+      MaskStyleString	      "edit,edit,edit"
+      MaskTunableValueString  "on,on,on"
+      MaskCallbackString      "||"
+      MaskEnableString	      "on,on,on"
+      MaskVisibilityString    "on,on,on"
+      MaskToolTipString	      "on,on,on"
+      MaskInitialization      "xindex=@1; yindex=@2; table=@3; sftab2chk(xinde"
+"x,yindex,table);"
+      MaskDisplay	      "plot(-10,-10,110,110,[90,50,10],[90,40,30],[90,"
+"50,10],[50,26,20],[90,50,10],[22,13,10])"
+      MaskIconFrame	      on
+      MaskIconOpaque	      on
+      MaskIconRotate	      "none"
+      MaskIconUnits	      "autoscale"
+      MaskValueString	      "fc_map_spd*fc_spd_scale*30/pi|fc_map_trq*fc_trq"
+"_scale|fc_fuel_map*fc_spd_scale*fc_trq_scale"
+      MaskVariableAliases     ",,"
+      Port {
+	PortNumber		1
+	Name			"g/s"
+	TestPoint		off
+	LinearAnalysisOutput	off
+	LinearAnalysisInput	off
+	RTWStorageClass		"Auto"
+      }
+      System {
+	Name			"fuel\n(g/s)"
+	Location		[326, 253, 608, 407]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"usletter"
+	PaperUnits		"inches"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "x0"
+	  Position		  [20, 25, 40, 45]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "y0"
+	  Position		  [20, 80, 40, 100]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux"
+	  Ports			  [2, 1]
+	  Position		  [90, 46, 120, 79]
+	  Inputs		  "2"
+	  DisplayOption		  "none"
+	}
+	Block {
+	  BlockType		  "S-Function"
+	  Name			  "S-function"
+	  Ports			  [1, 1]
+	  Position		  [140, 52, 190, 78]
+	  FunctionName		  "sftable2"
+	  Parameters		  "xindex, yindex, table"
+	  PortCounts		  "[]"
+	  SFunctionModules	  "''"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "table out"
+	  Position		  [215, 55, 235, 75]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "0"
+	}
+	Line {
+	  SrcBlock		  "Mux"
+	  SrcPort		  1
+	  DstBlock		  "S-function"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "x0"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, 20]
+	  DstBlock		  "Mux"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "S-function"
+	  SrcPort		  1
+	  DstBlock		  "table out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "y0"
+	  SrcPort		  1
+	  Points		  [20, 0; 0, -20]
+	  DstBlock		  "Mux"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Sum"
+      SrcPort		      1
+      DstBlock		      "fuel\n(g/s)"
+      DstPort		      2
+    }
+    Line {
+      Name		      "g Fuel"
+      Labels		      [0, 0]
+      SrcBlock		      "Integrator"
+      SrcPort		      1
+      Points		      [15, 0]
+      Branch {
+	DstBlock		"To Workspace1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -55]
+	DstBlock		"Verbrauch"
+	DstPort			1
+      }
+    }
+    Line {
+      Name		      "g/s"
+      Labels		      [0, 0]
+      SrcBlock		      "fuel\n(g/s)"
+      SrcPort		      1
+      DstBlock		      ">=0"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      ">=0"
+      SrcPort		      1
+      DstBlock		      "Integrator"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock"
+      SrcPort		      1
+      Points		      [35, 0]
+      Branch {
+	DstBlock		"Engine Speed\n(RPM)"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -30]
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Engine Speed\n(RPM)"
+      SrcPort		      1
+      Points		      [0, 0; 25, 0]
+      Branch {
+	Points			[300, 0; 0, 75]
+	DstBlock		"fuel\n(g/s)"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"engine_gen_ratio"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Alternator Torque"
+      SrcPort		      1
+      DstBlock		      "engine_gen_ratio1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "engine_gen_ratio"
+      SrcPort		      1
+      Points		      [0, 100]
+      DstBlock		      "Alternator Torque"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "engine_gen_ratio1"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Load Power (W)"
+      SrcPort		      1
+      Points		      [100, 0]
+      Branch {
+	Points			[110, 0]
+	DstBlock		"Sum2"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, -215; 40, 0]
+	Branch {
+	  DstBlock		  "Alternator Torque"
+	  DstPort		  2
+	}
+	Branch {
+	  Points		  [0, 130]
+	  DstBlock		  "Sum2"
+	  DstPort		  1
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Charging Efficiency"
+      SrcPort		      1
+      DstBlock		      "Thresh=0"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      Points		      [10, 0]
+      Branch {
+	Points			[0, -45]
+	DstBlock		"Charging Efficiency"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"Thresh=0"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 45]
+	DstBlock		"Discharging Efficiency"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Discharging Efficiency"
+      SrcPort		      1
+      DstBlock		      "Thresh=0"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Thresh=0"
+      SrcPort		      1
+      DstBlock		      "14V, 60 Ah"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "14V, 60 Ah"
+      SrcPort		      1
+      DstBlock		      "Integrator1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Integrator1"
+      SrcPort		      1
+      DstBlock		      "To Workspace"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine Torque\n(Nm)"
+      SrcPort		      1
+      DstBlock		      "Sum"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Clock1"
+      SrcPort		      1
+      DstBlock		      "Engine Torque\n(Nm)"
+      DstPort		      1
+    }
+  }
+}

@@ -1,0 +1,1630 @@
+Model {
+  Name			  "MondeoDP"
+  Version		  4.00
+  SampleTimeColors	  off
+  LibraryLinkDisplay	  "user"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowStorageClass	  off
+  ExecutionOrder	  off
+  RecordCoverage	  off
+  CovPath		  "/"
+  CovSaveName		  "covdata"
+  CovMetricSettings	  "dw"
+  CovNameIncrementing	  off
+  CovHtmlReporting	  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  BrowserLookUnderMasks	  off
+  Created		  "Thu Dec 12 10:58:26 2002"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "meifert"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Tue Aug 26 15:56:42 2003"
+  ModelVersionFormat	  "1.%<AutoIncrement:99>"
+  ConfigurationManager	  "none"
+  SimParamPage		  "Solver"
+  StartTime		  "t_0"
+  StopTime		  "t_end"
+  SolverMode		  "Auto"
+  Solver		  "ode4"
+  RelTol		  "1e-3"
+  AbsTol		  "auto"
+  Refine		  "1"
+  MaxStep		  "auto"
+  MinStep		  "auto"
+  MaxNumMinSteps	  "-1"
+  InitialStep		  "auto"
+  FixedStep		  "T_s"
+  MaxOrder		  5
+  OutputOption		  "RefineOutputTimes"
+  OutputTimes		  "[]"
+  LoadExternalInput	  off
+  ExternalInput		  "[t, u]"
+  SaveTime		  on
+  TimeSaveName		  "tout"
+  SaveState		  off
+  StateSaveName		  "xout"
+  SaveOutput		  on
+  OutputSaveName	  "yout"
+  LoadInitialState	  off
+  InitialState		  "xInitial"
+  SaveFinalState	  off
+  FinalStateName	  "xFinal"
+  SaveFormat		  "Array"
+  LimitDataPoints	  on
+  MaxDataPoints		  "1000"
+  Decimation		  "1"
+  AlgebraicLoopMsg	  "warning"
+  MinStepSizeMsg	  "warning"
+  UnconnectedInputMsg	  "warning"
+  UnconnectedOutputMsg	  "warning"
+  UnconnectedLineMsg	  "warning"
+  InheritedTsInSrcMsg	  "warning"
+  SingleTaskRateTransMsg  "none"
+  MultiTaskRateTransMsg	  "error"
+  IntegerOverflowMsg	  "warning"
+  CheckForMatrixSingularity "none"
+  UnnecessaryDatatypeConvMsg "none"
+  Int32ToFloatConvMsg	  "warning"
+  InvalidFcnCallConnMsg	  "error"
+  SignalLabelMismatchMsg  "none"
+  LinearizationMsg	  "none"
+  VectorMatrixConversionMsg "none"
+  SfunCompatibilityCheckMsg "none"
+  BlockPriorityViolationMsg "warning"
+  ArrayBoundsChecking	  "none"
+  ConsistencyChecking	  "none"
+  ZeroCross		  on
+  Profile		  off
+  SimulationMode	  "normal"
+  RTWSystemTargetFile	  "grt.tlc"
+  RTWInlineParameters	  off
+  RTWRetainRTWFile	  off
+  RTWTemplateMakefile	  "grt_default_tmf"
+  RTWMakeCommand	  "make_rtw"
+  RTWGenerateCodeOnly	  off
+  TLCProfiler		  off
+  TLCDebug		  off
+  TLCCoverage		  off
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  ExtModeMexFile	  "ext_comm"
+  ExtModeBatchMode	  off
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  OptimizeBlockIOStorage  on
+  BufferReuse		  on
+  ParameterPooling	  on
+  BlockReductionOpt	  off
+  RTWExpressionDepthLimit 5
+  BooleanDataType	  off
+  BlockDefaults {
+    Orientation		    "right"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Helvetica"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  LineDefaults {
+    FontName		    "Helvetica"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  System {
+    Name		    "MondeoDP"
+    Location		    [2, 76, 1142, 792]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "automatic"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "A3"
+    PaperUnits		    "inches"
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    Block {
+      BlockType		      SubSystem
+      Name		      "Alternator"
+      Ports		      [2, 1]
+      Position		      [145, 204, 265, 286]
+      BackgroundColor	      "orange"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Alternator"
+	Location		[187, 161, 817, 388]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pe"
+	  Position		  [65, 73, 95, 87]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "w_eng"
+	  Position		  [350, 103, 380, 117]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Generator ratio"
+	  Ports			  [2, 2]
+	  Position		  [420, 48, 510, 132]
+	  SourceBlock		  "lib_VES_components/Generator <VES>/Generato"
+"r ratio"
+	  SourceType		  "SubSystem"
+	  ShowPortLabels	  on
+	  TreatAsAtomicUnit	  off
+	  RTWSystemCode		  "Auto"
+	  RTWFcnNameOpts	  "Auto"
+	  RTWFileNameOpts	  "Auto"
+	}
+	Block {
+	  BlockType		  Reference
+	  Name			  "Look-Up\nTable (2-D)"
+	  Ports			  [2, 1]
+	  Position		  [125, 42, 180, 93]
+	  SourceBlock		  "simulink3/Functions\n& Tables/Look-Up\nTabl"
+"e (2-D)"
+	  SourceType		  "Lookup Table (2-D)"
+	  x			  "gen_effmap_speeds"
+	  y			  "gen_effmap_Pels"
+	  t			  "gen_effmap_table"
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "MIN"
+	  Position		  [245, 49, 300, 91]
+	  Gain			  "-1"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	  Port {
+	    PortNumber		    1
+	    Name		    "T_gen"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Me"
+	  Position		  [575, 63, 605, 77]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "w_eng"
+	  SrcPort		  1
+	  DstBlock		  "Generator ratio"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Generator ratio"
+	  SrcPort		  2
+	  Points		  [25, 0; 0, 50; -490, 0; 0, -105]
+	  DstBlock		  "Look-Up\nTable (2-D)"
+	  DstPort		  1
+	}
+	Line {
+	  Name			  "T_gen"
+	  Labels		  [0, 0]
+	  SrcBlock		  "MIN"
+	  SrcPort		  1
+	  DstBlock		  "Generator ratio"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Look-Up\nTable (2-D)"
+	  SrcPort		  1
+	  DstBlock		  "MIN"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Generator ratio"
+	  SrcPort		  1
+	  DstBlock		  "Me"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pe"
+	  SrcPort		  1
+	  DstBlock		  "Look-Up\nTable (2-D)"
+	  DstPort		  2
+	}
+      }
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "Battery"
+      Ports		      [1, 1]
+      Position		      [145, 117, 265, 183]
+      BackgroundColor	      "orange"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"Battery"
+	Location		[2, 76, 1142, 816]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Pb"
+	  Position		  [25, 128, 55, 142]
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "100%/(Ub V*Batt.-Kapazität Ah)"
+	  Position		  [410, 77, 600, 123]
+	  Gain			  "100/(B_Sp*B_Kap)"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Gain
+	  Name			  "Gain"
+	  Position		  [180, 121, 255, 149]
+	  ShowName		  off
+	  Gain			  "a"
+	  Multiplication	  "Element-wise(K.*u)"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Integrator
+	  Name			  "Integrator"
+	  Ports			  [1, 1]
+	  Position		  [620, 81, 670, 119]
+	  BackgroundColor	  "magenta"
+	  ShowName		  off
+	  ExternalReset		  "none"
+	  InitialConditionSource  "internal"
+	  InitialCondition	  "LadungAnfang"
+	  LimitOutput		  off
+	  UpperSaturationLimit	  "inf"
+	  LowerSaturationLimit	  "-inf"
+	  ShowSaturationPort	  off
+	  ShowStatePort		  off
+	  AbsoluteTolerance	  "auto"
+	}
+	Block {
+	  BlockType		  Math
+	  Name			  "Math\nFunction"
+	  Ports			  [1, 1]
+	  Position		  [90, 117, 135, 153]
+	  ShowName		  off
+	  Operator		  "magnitude^2"
+	  OutputSignalType	  "auto"
+	}
+	Block {
+	  BlockType		  Sum
+	  Name			  "Sum"
+	  Ports			  [2, 1]
+	  Position		  [355, 29, 385, 171]
+	  ShowName		  off
+	  IconShape		  "rectangular"
+	  Inputs		  "++"
+	  SaturateOnIntegerOverflow on
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "Delta SOC"
+	  Position		  [760, 93, 790, 107]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  SrcBlock		  "Gain"
+	  SrcPort		  1
+	  DstBlock		  "Sum"
+	  DstPort		  2
+	}
+	Line {
+	  SrcBlock		  "Math\nFunction"
+	  SrcPort		  1
+	  DstBlock		  "Gain"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Pb"
+	  SrcPort		  1
+	  Points		  [0, 0; 5, 0]
+	  Branch {
+	    DstBlock		    "Math\nFunction"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, -70]
+	    DstBlock		    "Sum"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  SrcBlock		  "Sum"
+	  SrcPort		  1
+	  DstBlock		  "100%/(Ub V*Batt.-Kapazität Ah)"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Integrator"
+	  SrcPort		  1
+	  DstBlock		  "Delta SOC"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "100%/(Ub V*Batt.-Kapazität Ah)"
+	  SrcPort		  1
+	  DstBlock		  "Integrator"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Brakes <DL>"
+      Ports		      [2, 2]
+      Position		      [1115, 229, 1215, 296]
+      BackgroundColor	      "yellow"
+      AncestorBlock	      "lib_wheel/wheel and\naxle <wh>/front/rear brake"
+" controller interface\n(achievable)"
+      SourceBlock	      "lib_driveline_components/Brakes <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Chassis <DL>"
+      Ports		      [2, 3]
+      Position		      [1445, 302, 1540, 388]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Chassis <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Clutch <DL>"
+      Ports		      [3, 3]
+      Position		      [610, 322, 720, 398]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Clutch <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      Position		      [335, 351, 365, 379]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "Mv"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant2"
+      Position		      [15, 211, 45, 239]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "Pe"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant3"
+      Position		      [530, 231, 580, 259]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "SlipStick"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant4"
+      Position		      [780, 366, 835, 394]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "GangZahl"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant5"
+      Position		      [1060, 231, 1090, 259]
+      ForegroundColor	      "darkGreen"
+      ShowName		      off
+      Value		      "Mb"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "DP Clutch"
+      Ports		      [3, 2]
+      Position		      [610, 235, 690, 305]
+      BackgroundColor	      "orange"
+      NamePlacement	      "alternate"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      System {
+	Name			"DP Clutch"
+	Location		[2, 72, 1150, 812]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"automatic"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  Inport
+	  Name			  "Slip/Stick"
+	  Position		  [60, 63, 90, 77]
+	  NamePlacement		  "alternate"
+	  Port			  "1"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "T/J In"
+	  Position		  [150, 33, 180, 47]
+	  Port			  "2"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Inport
+	  Name			  "w_out"
+	  Position		  [205, 153, 235, 167]
+	  Port			  "3"
+	  LatchInput		  off
+	  Interpolate		  on
+	}
+	Block {
+	  BlockType		  Constant
+	  Name			  "Constant2"
+	  Position		  [60, 94, 85, 116]
+	  ShowName		  off
+	  Value			  "0"
+	  VectorParams1D	  on
+	  Port {
+	    PortNumber		    1
+	    Name		    "Slip_T"
+	    TestPoint		    off
+	    LinearAnalysisOutput    off
+	    LinearAnalysisInput	    off
+	    RTWStorageClass	    "Auto"
+	  }
+	}
+	Block {
+	  BlockType		  Mux
+	  Name			  "Mux8"
+	  Ports			  [2, 1]
+	  Position		  [170, 80, 175, 115]
+	  BackgroundColor	  "black"
+	  ShowName		  off
+	  Inputs		  "2"
+	  DisplayOption		  "none"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "Speed"
+	  Position		  [270, 146, 300, 234]
+	  Threshold		  "0.5"
+	}
+	Block {
+	  BlockType		  Switch
+	  Name			  "T/J2"
+	  Position		  [270, 26, 300, 114]
+	  Threshold		  "0.5"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "T/J Out"
+	  Position		  [320, 63, 350, 77]
+	  Port			  "1"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Block {
+	  BlockType		  Outport
+	  Name			  "w_in"
+	  Position		  [330, 183, 360, 197]
+	  Port			  "2"
+	  OutputWhenDisabled	  "held"
+	  InitialOutput		  "[]"
+	}
+	Line {
+	  Name			  "Slip_T"
+	  Labels		  [0, 0]
+	  SrcBlock		  "Constant2"
+	  SrcPort		  1
+	  Points		  [20, 0; 25, 0]
+	  Branch {
+	    DstBlock		    "Mux8"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, -15]
+	    DstBlock		    "Mux8"
+	    DstPort		    1
+	  }
+	  Branch {
+	    Points		    [0, 115]
+	    DstBlock		    "Speed"
+	    DstPort		    3
+	  }
+	}
+	Line {
+	  SrcBlock		  "Mux8"
+	  SrcPort		  1
+	  DstBlock		  "T/J2"
+	  DstPort		  3
+	}
+	Line {
+	  SrcBlock		  "T/J In"
+	  SrcPort		  1
+	  DstBlock		  "T/J2"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "T/J2"
+	  SrcPort		  1
+	  DstBlock		  "T/J Out"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "Slip/Stick"
+	  SrcPort		  1
+	  Points		  [100, 0]
+	  Branch {
+	    DstBlock		    "T/J2"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [0, 120]
+	    DstBlock		    "Speed"
+	    DstPort		    2
+	  }
+	}
+	Line {
+	  SrcBlock		  "Speed"
+	  SrcPort		  1
+	  DstBlock		  "w_in"
+	  DstPort		  1
+	}
+	Line {
+	  SrcBlock		  "w_out"
+	  SrcPort		  1
+	  DstBlock		  "Speed"
+	  DstPort		  1
+	}
+      }
+    }
+    Block {
+      BlockType		      Demux
+      Name		      "Demux1"
+      Ports		      [1, 2]
+      Position		      [600, 591, 605, 664]
+      BackgroundColor	      "black"
+      ShowName		      off
+      Outputs		      "2"
+      BusSelectionMode	      off
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Driver <DL>"
+      Ports		      [5, 4]
+      Position		      [790, 122, 900, 218]
+      Orientation	      "left"
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Driver <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Engine <DL>"
+      Ports		      [6, 4]
+      Position		      [410, 344, 560, 561]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Engine <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Final drive <DL>"
+      Ports		      [2, 2]
+      Position		      [985, 368, 1060, 432]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Final drive <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Front wheels <DL>"
+      Ports		      [3, 2]
+      Position		      [1115, 351, 1225, 419]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Front wheels <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Gearbox <DL>"
+      Ports		      [3, 2]
+      Position		      [855, 366, 940, 434]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Gearbox <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Generator <VES>"
+      Ports		      [4, 3]
+      Position		      [130, 340, 280, 435]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_VES_components/Generator <VES>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground"
+      Position		      [925, 120, 945, 140]
+      Orientation	      "left"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Ground
+      Name		      "Ground1"
+      Position		      [955, 140, 975, 160]
+      Orientation	      "left"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Mux
+      Name		      "Mux1"
+      Ports		      [2, 1]
+      Position		      [385, 413, 390, 457]
+      ShowName		      off
+      Inputs		      "2"
+      DisplayOption	      "bar"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "P_gen_0"
+      Position		      [15, 410, 55, 440]
+      Value		      "210"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "P_gen_extra"
+      Position		      [15, 370, 55, 400]
+      NamePlacement	      "alternate"
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "P_gen_extra1"
+      Position		      [15, 121, 80, 149]
+      NamePlacement	      "alternate"
+      ShowName		      off
+      Value		      "P_Load"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Steering pump <DL>"
+      Ports		      [1, 1]
+      Position		      [135, 467, 280, 513]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Steering pump <DL>"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum1"
+      Ports		      [2, 1]
+      Position		      [315, 397, 325, 448]
+      ShowName		      off
+      FontName		      "Arial"
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum2"
+      Ports		      [2, 1]
+      Position		      [110, 122, 125, 178]
+      ShowName		      off
+      FontName		      "Arial"
+      IconShape		      "rectangular"
+      Inputs		      "-+"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Sum
+      Name		      "Sum6"
+      Ports		      [2, 1]
+      Position		      [85, 372, 100, 428]
+      ShowName		      off
+      FontName		      "Arial"
+      IconShape		      "rectangular"
+      Inputs		      "++"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace"
+      Position		      [855, 320, 915, 350]
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      VariableName	      "StickTrue"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace1"
+      Position		      [1110, 180, 1170, 210]
+      BackgroundColor	      "lightBlue"
+      VariableName	      "T_brake_dd"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace10"
+      Position		      [1690, 330, 1750, 360]
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      VariableName	      "v_veh"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace11"
+      Position		      [325, 230, 385, 260]
+      BackgroundColor	      "lightBlue"
+      NamePlacement	      "alternate"
+      VariableName	      "T_gen"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace12"
+      Position		      [1640, 405, 1700, 435]
+      BackgroundColor	      "lightBlue"
+      VariableName	      "x_veh"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace13"
+      Position		      [615, 525, 675, 545]
+      BackgroundColor	      "lightBlue"
+      VariableName	      "av_fuel_use"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace14"
+      Position		      [1175, 480, 1235, 510]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "w_axle"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace2"
+      Position		      [720, 75, 780, 105]
+      BackgroundColor	      "lightBlue"
+      VariableName	      "T_eng_dd"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace3"
+      Position		      [325, 135, 385, 165]
+      ForegroundColor	      "cyan"
+      ShowName		      off
+      VariableName	      "Charge"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace4"
+      Position		      [615, 414, 675, 436]
+      BackgroundColor	      "lightBlue"
+      VariableName	      "cum_fuel"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace5"
+      Position		      [610, 170, 670, 200]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "x_clutch_dd"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace6"
+      Position		      [615, 470, 675, 490]
+      BackgroundColor	      "lightBlue"
+      VariableName	      "fuel_use"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace7"
+      Position		      [715, 191, 765, 219]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "gear_dd"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace8"
+      Position		      [875, 655, 935, 685]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "n_eng"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      ToWorkspace
+      Name		      "To Workspace9"
+      Position		      [630, 595, 690, 625]
+      BackgroundColor	      "lightBlue"
+      ShowName		      off
+      VariableName	      "T_eng"
+      MaxDataPoints	      "inf"
+      Decimation	      "1"
+      SampleTime	      "-1"
+      SaveFormat	      "Array"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "Tyre/road contact <DL>"
+      Ports		      [3, 1]
+      Position		      [1285, 333, 1395, 407]
+      BackgroundColor	      "yellow"
+      SourceBlock	      "lib_driveline_components/Tyre//road contact <DL"
+">"
+      SourceType	      "SubSystem"
+      ShowPortLabels	      on
+      TreatAsAtomicUnit	      off
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "bla"
+      Position		      [635, 635, 655, 655]
+      BackgroundColor	      "red"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "bla1"
+      Position		      [735, 350, 755, 370]
+      BackgroundColor	      "red"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "bla2"
+      Position		      [650, 125, 670, 145]
+      Orientation	      "left"
+      BackgroundColor	      "red"
+      ShowName		      off
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "cycle running"
+      Position		      [350, 492, 375, 518]
+      Value		      "1"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "cycle running1"
+      Position		      [70, 337, 95, 363]
+      NamePlacement	      "alternate"
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "cycle running2"
+      Position		      [335, 392, 365, 408]
+      ShowName		      off
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "cycle running3"
+      Position		      [335, 437, 365, 453]
+      ShowName		      off
+      Value		      "0"
+      VectorParams1D	      on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "m/s2km/h"
+      Position		      [1610, 323, 1665, 367]
+      NamePlacement	      "alternate"
+      FontName		      "Arial"
+      Gain		      "3.6"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Block {
+      BlockType		      Gain
+      Name		      "rad2rpm"
+      Position		      [780, 648, 850, 692]
+      FontName		      "Arial"
+      Gain		      "60/(2*pi)"
+      Multiplication	      "Element-wise(K.*u)"
+      SaturateOnIntegerOverflow	on
+    }
+    Line {
+      SrcBlock		      "Gearbox <DL>"
+      SrcPort		      1
+      DstBlock		      "Final drive <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Final drive <DL>"
+      SrcPort		      2
+      Points		      [0, 80; -225, 0]
+      DstBlock		      "Gearbox <DL>"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Chassis <DL>"
+      SrcPort		      2
+      Points		      [30, 0]
+      Branch {
+	Points			[0, -175]
+	DstBlock		"Driver <DL>"
+	DstPort			3
+      }
+      Branch {
+	Points			[0, 80]
+	Branch {
+	  Points		  [-305, 0]
+	  DstBlock		  "Tyre/road contact <DL>"
+	  DstPort		  3
+	}
+	Branch {
+	  Points		  [0, 155; -500, 0]
+	  Branch {
+	    Points		    [0, -300]
+	    DstBlock		    "Brakes <DL>"
+	    DstPort		    2
+	  }
+	  Branch {
+	    Points		    [-755, 0; 0, -110]
+	    DstBlock		    "Engine <DL>"
+	    DstPort		    4
+	  }
+	}
+      }
+      Branch {
+	DstBlock		"m/s2km/h"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Front wheels <DL>"
+      SrcPort		      2
+      Points		      [0, 50; -110, 0]
+      Branch {
+	Points			[-150, 0]
+	DstBlock		"Final drive <DL>"
+	DstPort			2
+      }
+      Branch {
+	Points			[0, 40]
+	DstBlock		"To Workspace14"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "rad2rpm"
+      SrcPort		      1
+      DstBlock		      "To Workspace8"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux1"
+      SrcPort		      1
+      DstBlock		      "To Workspace9"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Demux1"
+      SrcPort		      2
+      DstBlock		      "bla"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Driver <DL>"
+      SrcPort		      1
+      Points		      [-90, 0]
+      Branch {
+	Points			[0, -45]
+	DstBlock		"To Workspace2"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"bla2"
+	DstPort			1
+      }
+    }
+    Line {
+      Labels		      [0, 0]
+      SrcBlock		      "Driver <DL>"
+      SrcPort		      2
+      Points		      [-210, 0; 0, 25; 20, 0]
+      Branch {
+	DstBlock		"To Workspace5"
+	DstPort			1
+      }
+      Branch {
+	Points			[-80, 0; 0, 150]
+	DstBlock		"Clutch <DL>"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Driver <DL>"
+      SrcPort		      3
+      Points		      [-85, 0]
+      DstBlock		      "To Workspace7"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "m/s2km/h"
+      SrcPort		      1
+      DstBlock		      "To Workspace10"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Brakes <DL>"
+      SrcPort		      1
+      Points		      [210, 0]
+      DstBlock		      "Chassis <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Tyre/road contact <DL>"
+      SrcPort		      1
+      Points		      [0, 0; 15, 0]
+      Branch {
+	Points			[0, 75; -315, 0]
+	DstBlock		"Front wheels <DL>"
+	DstPort			3
+      }
+      Branch {
+	DstBlock		"Chassis <DL>"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Front wheels <DL>"
+      SrcPort		      1
+      DstBlock		      "Tyre/road contact <DL>"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Chassis <DL>"
+      SrcPort		      1
+      Points		      [0, -25; -275, 0]
+      DstBlock		      "Tyre/road contact <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Gearbox <DL>"
+      SrcPort		      2
+      Points		      [5, 0; 0, 35; -355, 0; 0, -70]
+      Branch {
+	DstBlock		"DP Clutch"
+	DstPort			3
+      }
+      Branch {
+	Labels			[1, 0]
+	DstBlock		"Clutch <DL>"
+	DstPort			3
+      }
+    }
+    Line {
+      SrcBlock		      "DP Clutch"
+      SrcPort		      2
+      Points		      [65, 0; 0, 185]
+      Branch {
+	Points			[200, 0; 0, -285]
+	DstBlock		"Driver <DL>"
+	DstPort			4
+      }
+      Branch {
+	Points			[0, 195]
+	Branch {
+	  Points		  [0, 0]
+	  DstBlock		  "rad2rpm"
+	  DstPort		  1
+	}
+	Branch {
+	  Points		  [-385, 0; 0, 0]
+	  Branch {
+	    Points		    [0, -130]
+	    DstBlock		    "Engine <DL>"
+	    DstPort		    6
+	  }
+	  Branch {
+	    Points		    [-265, 0; 0, -180]
+	    Branch {
+	      DstBlock		      "Steering pump <DL>"
+	      DstPort		      1
+	    }
+	    Branch {
+	      Points		      [0, -65]
+	      Branch {
+		DstBlock		"Generator <VES>"
+		DstPort			4
+	      }
+	      Branch {
+		Points			[0, -160]
+		DstBlock		"Alternator"
+		DstPort			2
+	      }
+	    }
+	  }
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "Clutch <DL>"
+      SrcPort		      1
+      Points		      [90, 0]
+      Branch {
+	DstBlock		"To Workspace"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -80; 100, 0]
+	DstBlock		"Driver <DL>"
+	DstPort			5
+      }
+    }
+    Line {
+      SrcBlock		      "Brakes <DL>"
+      SrcPort		      2
+      Points		      [0, 45; -120, 0]
+      DstBlock		      "Front wheels <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Final drive <DL>"
+      SrcPort		      1
+      DstBlock		      "Front wheels <DL>"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Mux1"
+      SrcPort		      1
+      DstBlock		      "Engine <DL>"
+      DstPort		      3
+    }
+    Line {
+      SrcBlock		      "Engine <DL>"
+      SrcPort		      1
+      Points		      [5, 0; 5, 0]
+      Branch {
+	Points			[0, 260]
+	DstBlock		"Demux1"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -10]
+	Branch {
+	  Points		  [0, -90]
+	  DstBlock		  "DP Clutch"
+	  DstPort		  2
+	}
+	Branch {
+	  DstBlock		  "Clutch <DL>"
+	  DstPort		  2
+	}
+      }
+    }
+    Line {
+      SrcBlock		      "P_gen_extra"
+      SrcPort		      1
+      DstBlock		      "Sum6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine <DL>"
+      SrcPort		      3
+      DstBlock		      "To Workspace6"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "cycle running"
+      SrcPort		      1
+      DstBlock		      "Engine <DL>"
+      DstPort		      5
+    }
+    Line {
+      SrcBlock		      "Engine <DL>"
+      SrcPort		      2
+      DstBlock		      "To Workspace4"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Chassis <DL>"
+      SrcPort		      3
+      Points		      [50, 0; 0, 45]
+      DstBlock		      "To Workspace12"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Engine <DL>"
+      SrcPort		      4
+      DstBlock		      "To Workspace13"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "P_gen_0"
+      SrcPort		      1
+      Points		      [10, 0]
+      DstBlock		      "Sum6"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Sum1"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Steering pump <DL>"
+      SrcPort		      1
+      Points		      [15, 0]
+      DstBlock		      "Sum1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "cycle running1"
+      SrcPort		      1
+      DstBlock		      "Generator <VES>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum6"
+      SrcPort		      1
+      Points		      [10, 0]
+      DstBlock		      "Generator <VES>"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant3"
+      SrcPort		      1
+      DstBlock		      "DP Clutch"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "DP Clutch"
+      SrcPort		      1
+      Points		      [75, 0; 0, 145]
+      DstBlock		      "Gearbox <DL>"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Clutch <DL>"
+      SrcPort		      2
+      DstBlock		      "bla1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "cycle running2"
+      SrcPort		      1
+      DstBlock		      "Engine <DL>"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "cycle running3"
+      SrcPort		      1
+      DstBlock		      "Mux1"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "Engine <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Alternator"
+      SrcPort		      1
+      Points		      [30, 0]
+      Branch {
+	DstBlock		"Sum1"
+	DstPort			1
+      }
+      Branch {
+	DstBlock		"To Workspace11"
+	DstPort			1
+      }
+    }
+    Line {
+      SrcBlock		      "Constant2"
+      SrcPort		      1
+      Points		      [35, 0]
+      Branch {
+	DstBlock		"Alternator"
+	DstPort			1
+      }
+      Branch {
+	Points			[0, -60]
+	DstBlock		"Sum2"
+	DstPort			2
+      }
+    }
+    Line {
+      SrcBlock		      "Constant4"
+      SrcPort		      1
+      DstBlock		      "Gearbox <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Driver <DL>"
+      SrcPort		      4
+      Points		      [0, 35; 200, 0; 0, -50]
+      DstBlock		      "To Workspace1"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Constant5"
+      SrcPort		      1
+      DstBlock		      "Brakes <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Ground1"
+      SrcPort		      1
+      DstBlock		      "Driver <DL>"
+      DstPort		      2
+    }
+    Line {
+      SrcBlock		      "Ground"
+      SrcPort		      1
+      DstBlock		      "Driver <DL>"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Sum2"
+      SrcPort		      1
+      DstBlock		      "Battery"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "P_gen_extra1"
+      SrcPort		      1
+      DstBlock		      "Sum2"
+      DstPort		      1
+    }
+    Line {
+      SrcBlock		      "Battery"
+      SrcPort		      1
+      DstBlock		      "To Workspace3"
+      DstPort		      1
+    }
+  }
+}
+
+# Finite State Machines
+# -- File save dated 26-Aug-2003 15:56:43
+#
+#    Stateflow Version 4.1 (R12.1) dated May 21 2001, 01:15:03
+#
+#
+
+Stateflow {
+
+	machine {
+		id                   		1
+		name                 		"MondeoDP"
+		created              		"12-Dec-2002 10:58:30"
+		isLibrary            		0
+		firstTarget          		2
+		sfVersion            		41012101
+	}
+
+	target {
+		id               		2
+		name             		"sfun"
+		description      		"Default Simulink S-Function Target."
+		codeFlags        		" debug=1 telemetry=0 preservenames=0 preservenameswithparent"
+						"=0 exportcharts=0 project=0 multiinstanced=0 statebitsets=0 "
+						"databitsets=0 comments=1 echo=1 initializer=1 ioformat=1"
+		machine          		1
+		linkNode         		[1 0 0]
+	}
+}
